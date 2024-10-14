@@ -1,0 +1,175 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura completa de la ventana */
+    background-color: #f0f0f0;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 50px 0 40px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+/* Título */
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 40px; /* Aumenta el margen para separar el título del contenido */
+    color: #007BFF;
+    text-align: center; /* Centra el título */
+}
+
+/* Navegación */
+.sidebar nav {
+    flex: 1; /* Ocupa el espacio disponible entre el título y el pie de página */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0; /* Espacio entre los enlaces */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #007BFF(0, 0, 0);
+    display: inline-block; /* Asegura que el padding y margen se apliquen correctamente */
+    padding: 10px 20px; /* Espaciado dentro del enlace */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: aqua; /* Fondo de color gris claro cuando se pasa el ratón */
+    color: #007BFF;
+}
+
+/* Pie de Página */
+.sidebar footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.sidebar footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #007BFF;
+}
+
+.sidebar .copy-text {
+    color: #007BFF(0, 0, 0); /* Celeste */
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 20%;
+    padding: 20px;
+    width: 80%;
+    color: rgb(0, 0, 0);
+}
+
+/* Sección de "Sobre mí" */
+#sobre-mi {
+    margin-bottom: 40px;
+}
+
+.sobre-mi-content {
+    display: flex; /* Alinea los elementos en una fila */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.foto1 {
+    height: 270px;
+    width: 270px;
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+    border-radius: 50%; /* Hace la imagen circular */
+    align-items: flex-end;
+    opacity: 50%; /* Opacidad al 80% */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el agrandamiento */
+}
+
+.foto1:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+    opacity: 100%;
+}
+
+/* Estilo para los encabezados de las secciones */
+h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+/* Sección de habilidades */
+#habilidades {
+    margin-bottom: 40px;
+}
+
+#habilidades h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Contenedor de las barras de progreso */
+.progress-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las barras de progreso */
+}
+
+/* Contenedor de barra de progreso */
+.progress-container {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 60%; /* Ancho más corto para las barras de progreso */
+}
+
+/* Barra de progreso */
+.progress-bar {
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 30px; /* Centra el texto verticalmente */
+    padding-left: 10px; /* Espacio entre el borde y el texto */
+}
+
+.progress-bar.html {
+    background-color: #f06d06; /* Naranja */
+}
+
+.progress-bar.css {
+    background-color: #007BFF; /* Azul */
+}
+
+.progress-bar.js {
+    background-color: #F7E02D; /* Amarillo */
+}
+
+.progress-text {
+    text-align: right;
+}
